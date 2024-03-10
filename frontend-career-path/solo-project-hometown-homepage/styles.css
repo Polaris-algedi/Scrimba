@@ -1,29 +1,138 @@
 /**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
+Palette: https://coolors.co/user/palettes/65ed1f0b2e2b78000b30466e
+Font: https://fonts.google.com/specimen/Spinnaker
 
 */
 
 body {
   margin: 0;
   text-align: center;
+  font-family: "Spinnaker", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1d3557;
 }
 
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* all sections*/
+.hero,
+.activities,
+.guide {
+  height: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+/* hero section*/
 .hero {
   margin: 0;
   padding: 0;
-  background: url(./images/hero-image.jpg);
+  background: url(./images/cover.jpg);
   background-size: cover;
+  background-position: center;
+}
+
+.header h1,
+.header h2 {
+  color: #f1faee;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+.header h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  width: 50%;
 }
 
 .header {
-  margin-top: 0;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
+/* activities section*/
+.activities {
+  background-color: #fae7ce;
+  height: 500px;
+}
+.activities h3 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+
+.places-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.place {
+  padding: 5px;
+  width: 30%;
+  height: 370px;
+  border-radius: 10px;
+  background-color: #f3c991;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.place img {
   width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.place h4 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.place p {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/* guides section*/
+
+.guide {
+  background-color: #f1faee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 450px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #a8dadc;
+  border-bottom: 10px solid #457b9d;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card img {
+  width: 50%;
+  height: 270px;
+  border-radius: 50px;
+}
+.guide-details {
+  width: 45%;
 }
